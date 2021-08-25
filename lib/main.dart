@@ -11,10 +11,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Latihan Container'),
-        ),
-      ),
+          appBar: AppBar(
+            title: Text('Latihan Container'),
+          ),
+          body: Container(
+            color: Colors.red,
+            margin: EdgeInsets.all(10),
+            padding: EdgeInsets.all(10),
+            child: Container(
+              margin: EdgeInsets.all(10),
+              color: Colors.blue,
+            ),
+          )),
     );
   }
 }
